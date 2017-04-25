@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: "微软雅黑";
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul>li{
+    list-style: none;
+}
+/* 加载页面 */
+#load{
+    width: 100%;
+    height: 100%;
+    background: url('img/loading_bg.jpg') 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 800;
+}
+/* header */
+#header{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 888;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    line-height: 10px;
+    margin-left: 10px;
+}
+.logo:hover img{
+    transform: scale(1.2);
+}
+.cter{
+    float: right;
+    margin-right: 28%;
+}
+.cter li{
+    float: left;
+    width: 100px;
+    font-size: 12px;
+    position: relative;
+}
+.span{
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border-top: 5px solid #051596;
+}
+#active{
+    color: white;
+}
+.cter>li a{
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+    color: gray;
+}
+
+.cter>li:hover a{
+    color: white;
+}
+/* 导航图片 */
+#nav{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.h{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.h li{
+    width: 25%;
+    height: 100%;
+    background-size: 100% 100%;
+    float: left;
+}
+.h_1{
+    background-image: url('img/nav_1.jpg');
+}
+.h_2{
+    background-image: url('img/nav_2.jpg');
+}
+.h_3{
+    background-image: url('img/nav_3.jpg');
+}
+.h_4{
+    background-image: url('img/nav_4.jpg');
+}
+/* 背景图蒙版 */
+#back{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    overflow: hidden;
+}
+#back li{
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background-color: black;
+}
+#back .show{
+    background-color: transparent;
+}
+/* 导航文字 */
+.type{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+.type li{
+    width: 25%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+.type li div{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    text-align: center;
+}
+.type li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.type li span{
+    background-color: #051596;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    width: 70px;
+    height: 5px;
+    margin-left: -35px;
+    overflow: hidden;
+}
+/* about us */
+#about{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+.atop{
+    width: 100%;
+    height: 100%;
+}
+.atop img:nth-of-type(1){
+    width: 45%;
+}
+.context{
+    width: 42%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.atop div:nth-of-type(1) img{
+    width: 100%;
+}
+.inner{
+    margin-top: 30%;
+}
+.atop div:nth-of-type(1) p{
+    color: white;
+    font-size: 12px;
+    margin-top: 5%;
+}
+.client{
+    margin-top: 10%;
+}
+/* ............................................ */
+/* work */
+#work{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+/* workTop */
+.workTop{
+    width: 100%;
+    height: 50%;
+}
+.workTop img:nth-of-type(1){
+    width: 50%;
+}
+.workContext{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.workContext>ul{
+    margin-top: 20%;
+}
+.workContext>ul>li{
+    position: relative;
+}
+.workContext>ul>li>a:hover {
+    color: white;
+}
+.workContext>ul>li>a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #051596;
+}
+.subfield{
+    width: 100%;
+    height: 50%;
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 0;
+}
+.workContext>ul>li>a:hover ~ ul{
+    display: block;
+}
+.subfield>li{
+    float: left;
+    font-size: 12px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.subfield>li>a{
+    color: gray;
+    text-decoration: none;
+}
+.workContext>ul>li .active{
+    color: white;
+}
+/* workBottom */
+.big{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.workBottom{
+    width: 100%;
+    height: 100%;
+}
+.big>.workBottom:first-child{
+    display: block;
+}
+.big>.workBottom:not(:first-child){
+    display: none;
+}
+/* contextLeft */
+.contextLeft{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.contextLeft>div:not(:nth-of-type(1)){
+    display: none;
+}
+.contextLeft>div>div:not(:nth-of-type(1)){
+    display: none;
+}
+.contextLeft div>div{
+    width: 100%;
+}
+.contextLeft div>div>img{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+}
+#dir{
+    display: block;
+    position: absolute;
+    left: 85%;
+    top: 85%;
+    z-index: 800;
+    overflow: hidden;
+}
+.contextLeft>div>div:last-of-type>span{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(100, 155, 0, 1.0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contextLeft>div>div:last-of-type>span:hover{
+    background-color: rgba(100, 155, 0, 1.0);
+}
+.contextLeft>div>div .add{
+    background-color: rgba(100, 155, 0, 1.0);
+}
+.contextLeft>div>div .block{
+    display: block;
+}
+/* contextRight */
+.contextRight{
+    width: 50%;
+    height: 95%;
+    float: right;
+    background-color: white;
+    position: relative;
+}
+.rightSub{
+    width: 72%;
+    position: absolute;
+    top: 12.8%;
+    left: 6%;
+}
+.rightSub div{
+    width: 16.66666%;
+    height: 115px;
+    float: left;
+}
+.rightSub div img{
+    width: 100%;
+    vertical-align: top;
+    cursor: pointer;
+}
+/* work字体切换 */
+
+/* CONFERENCE */
+.workBottom>.contextLeft>div>video{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+}
+.contextRight>.topSub{
+    width: 80%;
+    height: 90%;
+    margin: 5% 10%;
+}
+.contextRight>.topSub>div>p{
+    line-height: 30px;
+}
+/* .................................................... */
+/* team */
+#team{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+/* left */
+.teamleft{
+    width: 50%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+}
+.teamimg{
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 37%;
+}
+.teamimg li{
+    width: 28%;
+    float: left;
+    position: relative;
+}
+.teamimg li img{
+    width: 100%;
+    vertical-align: top;
+}
+.teamimg li div{
+    position: absolute;
+    width: 250px;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    display: none;
+}
+.teamimg li p{
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.teamimg li p:nth-of-type(1){
+    transform: scale(0.7);
+    left: -12px;
+    top: 0;
+}
+.teamimg li p:nth-of-type(2){
+    left: 5px;
+    bottom: 5px;
+}
+.teamimg>li:hover .block{
+    display: block;
+}
+/* right */
+.teamright{
+    width: 50%;
+    height: 100%;
+    color: white;
+    float: right;
+    position: relative;
+}
+.teamright img{
+    width: 100%;
+    height: 60%;
+}
+.teamright h2{
+    width: 100%;
+    height: 5%;
+    font-size: 13px;
+    font-weight: lighter;
+}
+.teamWrap{
+    width: 80%;
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+}
+.teamContext{
+    position: relative;
+}
+.teamContext h4{
+    font-size: 15px;
+}
+.teamContext h5{
+    font-size: 12px;
+    line-height: 50px;
+}
+.teamContext>p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.conbg{
+    position: absolute;
+    bottom: 0;
+}
+.scr{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 99.5%;
+    top: 0;
+}
+.move{
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    background-color: #051596;
+    top: 0;
+}
+/* contact */
+#contact{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+#contact img{
+    display: block;
+    position: absolute;
+}
+#contact img:nth-of-type(1){
+    left: 20%;
+    top: 10%;
+    z-index: 50;
+    cursor: pointer;
+}
+#contact img:nth-of-type(2){
+    left: 30%;
+    width: 70%;
+    height: 100%;
+}
+.carch{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    color: white;
+    left: 50%;
+    top: 60%;
+}
+.carch ul{
+    width: 100%;
+    height: 100%;
+}
+.carch ul>li:nth-of-type(1){
+    font-size: 13px;
+}
+.carch ul>li:nth-of-type(2){
+    margin-top: 10%;
+    font-size: 12px;
+}
+.carch ul>li:nth-of-type(3){
+    margin-top: 25%;
+    font-size: 12px;
+}
+.carch ul>li:not(:nth-of-type(1))>p{
+    width: 40%;
+    float: left;
+}
+.carch ul>li:not(:nth-of-type(1))>div{
+    width: 60%;
+    float: right;
+}
+.carch>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 45%;
+    left: -20%;
+    z-index: 1000;
+}
